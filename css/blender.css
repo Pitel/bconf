@@ -50,6 +50,10 @@ footer {
 	background: #555753;
 }
 
+header {
+	font-weight: bold;
+}
+
 /**
  * Hlavicka
  */
@@ -58,7 +62,6 @@ body > header {
 	background: #eeeeec;
 	color: black;
 	border-bottom: 3px solid black;
-	font-weight: bold;
 }
 body > header > h1 {
 	width: 940px;
@@ -110,7 +113,6 @@ article section:last-of-type p:last-of-type {
 
 article header {
 	clear: both;
-	font-weight: bold;
 }
 
 h2 {
