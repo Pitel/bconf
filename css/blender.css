@@ -10,6 +10,7 @@ body {
 
 header, footer, section, aside, nav, article {
 	display: block;
+	font-weight: bold;
 }
 
 body > header {
