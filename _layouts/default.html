@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="cs">
+<head>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Bc. Jan Kaláb" />
+	<meta name="description" content="Webové stránky Blender konference 2010" />
+	<meta name="keywords" content="blender,vutbr,3d,fit,conference,konference" />
+	<title>Blender konference 2011</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/blender.css" />
+	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+<body>
+	<header>
+		<h1>Blender konference 2011</h1>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="uvod">Úvod</a></li>
+				<li><a href="program">Program</a></li>
+				<li><a href="misto">Místo</a></li>
+				{*comment*}<li><a href="?p=download">Download</a></li>{*endcomment*}
+				<li><a href="organizatori">Organizátoři</a></li>
+				<li><a href="http://www.blender3d.cz/konference/2010">2010</a></li>
+			</ul>
+		</nav>
+		<article>
+			<?
+				//echo $_REQUEST["p"];
+				$file = "pages/" . $_REQUEST["p"] . ".htm";
+				if (file_exists($file)) {
+					include $file;
+				} else {
+					include "pages/uvod.htm";
+				}
+			?>
+		</article>
+		<aside>
+			<header>
+				<h3>Generální partner</h3>
+			</header>
+			<a href="http://www.fit.vutbr.cz"><img src="img/fit.png" width="100" height="100" alt="Fakulta informačních technologií" title="Fakulta informačních technologií" /></a>
+			{%comment%}
+			<header>
+				<h3>Mediální partneři</h3>
+			</header>
+			<a href="http://www.lvb.cz"><img src="img/lvb.png" width="100" height="54" alt="Linux v Brně" title="Linux v Brně" /></a>
+			<a href="http://www.liberix.cz"><img src="img/liberix.png" width="100" height="39" alt="Liberix" title="Liberix" /></a>
+			<a href="http://www.scribus.cz"><img src="img/scribus.png" width="100" height="20" alt="Scribus.cz" title="Scribus.cz" /></a>
+			<a href="http://www.linuxexpres.cz"><img src="img/linuxexpres.png" width="100" height="21" alt="LinuxEXPRES" title="LinuxEXPRES" /></a>
+			<a href="http://www.mandrivalinux.cz"><img src="img/mandrivalinux.png" width="100" height="15" alt="MandrivaLinux.cz" title="MandrivaLinux.cz" /></a>
+			<a href="http://www.openoffice.cz"><img src="img/openofficecz.png" width="100" height="15" alt="OpenOffice.cz" title="OpenOffice.cz" /></a>
+			{%endcomment%}
+		</aside>
+	</section>
+	<footer>&copy; 2011</footer>
+</body>
+</html>

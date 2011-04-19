@@ -1,0 +1,206 @@
+/**
+ * Layout
+ */
+body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	background: #2e3436;
+	color: white;
+}
+
+header, footer, section, aside, nav, article {
+	display: block;
+}
+
+body > header {
+	padding: 20px 0;
+}
+
+body > section {
+	display: table;
+	margin: 0 auto;
+	padding: 10px 0;
+	background: #555753;
+	/*border: 1px solid black;*/
+}
+
+nav {
+	display: table-cell;
+	width: 140px;
+	/*padding-right: 10px;*/
+	/*border: 1px solid red;*/
+}
+
+article {
+	display: table-cell;
+	width: 640px;
+	padding: 0 10px;
+	/*border: 1px solid green;*/
+}
+
+aside {
+	display: table-cell;
+	width: 140px;
+	/*border: 1px solid blue;*/
+}
+
+footer {
+	width: 940px;
+	margin: 0 auto;
+	background: #555753;
+}
+
+/**
+ * Hlavicka
+ */
+body > header {
+	font-size: xx-large;
+	background: #eeeeec;
+	color: black;
+	border-bottom: 3px solid black;
+}
+body > header > h1 {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/**
+ * Navigace
+ */
+nav li {
+	
+}
+nav a {
+	color: inherit;
+	display: block;
+	width: 120px;
+	padding: 5px;
+	background: #888a85;
+	border-left: 10px solid #babdb6;
+	text-decoration: none;
+}
+nav a:hover {
+	color: black;
+	background: #babdb6;
+	border-color: #d3d7cf;
+}
+
+/**
+ * Telo
+ */
+article a {
+	color: inherit;
+}
+
+p {
+	text-align: justify;
+	font-size: small;
+	padding: 10px 0;
+	line-height: 1.5em;
+}
+
+article header~p:first-of-type, article h3~p:first-of-type {
+	margin-top: 0;
+}
+
+article section:last-of-type p:last-of-type {
+	margin-bottom: 0;
+}
+
+article header {
+	clear: both;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+h3 {
+	font-size: large;
+}
+
+article table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 10px;
+}
+
+article td, article th {
+	border: 1px solid white;
+	padding: 10px;
+}
+
+article td {
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+article td dt {
+	font-weight: bold;
+}
+
+article td dd {
+	margin-left: 1em;
+}
+
+article th {
+	background: #888a85;
+	width: 25%;
+	vertical-align: middle;
+}
+
+article ul {
+	list-style: disc;
+	padding: 10px 0;
+	list-style-position: inside;
+	line-height: 1.5em;
+}
+
+/**
+ * Obrazky
+ */
+article img {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+img.left {
+	float: left;
+	margin-right: 10px;
+}
+
+img.right {
+	float: right;
+	margin-left: 10px;
+}
+
+img.center {
+	display: block;
+	margin: .5em auto;
+}
+
+#flickr td {
+	border: none;
+	text-align:center;
+}
+
+/**
+ * Sponzori
+ */
+aside header {
+	text-align: center;
+}
+
+aside img {
+	display: block;
+	margin: 10px auto;
+}
+
+/**
+ * Paticka
+ */
+footer {
+	font-size: x-small;
+	text-align: center;
+}
