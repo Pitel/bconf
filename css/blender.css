@@ -160,6 +160,10 @@ article ul {
 	line-height: 1.5em;
 }
 
+iframe.youtube-player {
+	margin: 10px auto;
+}
+
 /**
  * Obrazky
  */
