@@ -161,6 +161,7 @@ article ul {
 }
 
 iframe.youtube-player {
+	display: block;
 	margin: 10px auto;
 }
 
